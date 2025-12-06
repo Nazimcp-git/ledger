@@ -597,6 +597,8 @@ header {
     align-items: center;
     gap: 90px;
     margin-top: 40px;
+    position: relative;
+    display: inline-block;
 }
 .hex-btn {
   --w: 240px;     /* width (elongated) */
@@ -651,6 +653,7 @@ header {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
+    border-radius: 25px;
     line-height: 24px;
     position: relative;
     background: #FFFF;
@@ -838,11 +841,13 @@ header {
 }
 .btn-mainn.btn3 {
     max-width: 200px;
+    border-radius: 10px;
     width: 100%;
 }
 .btn3 {
     color: white;
-    background: #13143f;
+    border-radius: 25px;
+    background: linear-gradient(to right, #0a72b9, #121534);
 }
 .about-sec-contact-main {
     display: flex;
@@ -908,11 +913,11 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(180deg, rgba(19, 20, 63, 0.00) 0%, #8DC144 100%);
+    background: linear-gradient(180deg, rgba(19, 20, 63, 0.00) 0%, #8DC144 140%);
     pointer-events: none;
 }
 .services-slider-box:hover::before {
-    background: linear-gradient(180deg, rgba(19, 20, 63, 0) 0%, #8DC144 100%);
+    background: linear-gradient(180deg, rgba(19, 20, 63, 0) 0%, #8DC144 140%);
 }
 .services-icon-box {
     position: absolute;
