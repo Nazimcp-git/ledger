@@ -1,5 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html><html lang="en"><head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
@@ -10,18 +12,19 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media_query.css">
 </head>
+
 <body>
     <!-- ====================================== Preloader ===================================== -->
-   
+
     <!-- ====================================== Header ===================================== -->
     <header class="header">
         <div class="small-header">
             <div class="container small-header-sub-main">
                 <div class="small-header-sub">
-                    <a href="mailto:info@sawaedalamal.ae">
-                        <p><img src="images/email.svg" alt="email"> info@sawaedalamal.ae</p>
+                    <a href="mailto:info@magicalledger.ae">
+                        <p><img src="images/email.svg" alt="email"> info@magicalledger.ae</p>
                     </a>
-                    <p><img src="images/location.svg" alt="location"> Deria Dubai, UAE</p>
+                    <p><img src="images/location.svg" alt="location">Al Karama, Dubai, UAE.</p>
                 </div>
                 <div class="small-header-media-main">
                     
@@ -40,27 +43,40 @@
                 </div>
                 <ul class="menu-list">
                     <li class="conta-home">
-                        <a href="index.html">Home</a>
+                        <a href="#home" id="myLink">Home</a>
                     </li>
                     <li class="conta-home">
-                        <a href="index.html">About Us</a>
+                        <a href="#about" id="myLink">About Us</a>
                     </li>
                     <li class="conta-home">
-                        <a href="index.html">Service</a>
+                        <a href="#service" id="myLink">Service</a>
                     </li>
-                    <li class="conta-home"><a href="contact.html">Contact Us</a></li>
+                    <li class="conta-home"><a href="#contact" id="myLink">Contact Us</a></li>
                 </ul>
                 <div class="side-menu-footer">
                     
                 </div>
             </nav>
+            <script>
+    const links = document.querySelectorAll(".conta-home");
+    const nav = document.querySelector(".menu");
+    const overlau = document.querySelector(".menuOverlay");
+
+    links.forEach(link => {
+        link.addEventListener("click", function() {
+            nav.classList.remove("active");
+            overlau.classList.remove("active");
+        });
+    });
+</script>
+
             <div class="contact">
                 <div class="icon">
                     <img src="images/headphone.svg" alt="headphone">
                 </div>
                 <div class="call-info">
                     <p>Call Us</p>
-                    <a href="tel:+971529973761">+971 52 997 3761</a>
+                    <a href="tel:+971503197008">+971 50 3197008</a>
                 </div>
             </div>
             <button class="menu-toggle"><img src="images/menu.svg" alt="menu"></button>
@@ -85,271 +101,195 @@
                 <p class="quality">our services</p>
             </div>
             <div class="handyman-services-textMain">
-                <h2 class="handyman-text handyman-services services-page-text fade_down">We provide all essential
-                    Technical services at your
-                    location.
+                <h2 class="handyman-text handyman-services services-page-text fade_down">WE HANDLE ALL YOUR
+                    ACCOUNTING NEEDS
                 </h2>
-                <p class="fusce malesuada tellus fade_down mt-0">At Sawaed Alamal for Technical Services L.L.C, we deliver a
-                    complete
-                    range of finishing, installation, maintenance, and post-construction
-                    cleaning solutions designed to support residential, commercial, and
-                    industrial projects across the UAE. Our team combines technical
-                    expertise with meticulous attention to detail, ensuring every task is
-                    executed with precision, safety, and quality. From painting and tiling
-                    to HVAC, plumbing, carpentry, and comprehensive cleaning services,
-                    we offer end-to-end support that enhances the final look,
-                    performance, and readiness of every space.
+                <p class="fusce malesuada tellus fade_down mt-0">At Magical Ledger Accounts LLC, we offer complete
+                    accounting and
+                    f
+                    inancial management services to keep your business organized,
+                    compliant, and financially strong. From bookkeeping, financial
+                    reporting, VAT and corporate tax support to payroll, billing, audit
+                    preparation, business valuation, and software setup — we provide
+                    everything your company needs under one trusted partner. Our expert
+                    team ensures accuracy, clarity, and smooth financial operations at every
+                    step
                 </p>
             </div>
             <div class="row services-page-row">
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
                     <div class="services-slider-box">
-                    <img class="services-icon" src="images/1.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
+                        <img class="services-icon" src="images/Tally-&-Accounting.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
 
-                        <h2 class="services-solution-main-text">Construction Finishing</h2>
-                        <p class="aliquam-text"> We provide complete construction finishing
-                            solutions that ensure every project looks
-                            polished and professional, from structural
-                            completion to final touches.</p>
+                            <h2 class="services-solution-main-text">Tally & Accounting
+                                Setup
+
+                            </h2>
+
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
                     <div class="services-slider-box">
-                    <img class="services-icon" src="images/2.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
+                        <img class="services-icon" src="images/Cost-Control-&-Risk.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
 
-                        <h2 class="services-solution-main-text">Wall and Ceiling Painting</h2>
-                        <p class="aliquam-text">Our painting services transform interiors and
-                            exteriors with smooth, even coats,
-                            high-quality paints, and attention to detail,
-                            enhancing the aesthetic appeal of any
-                            space.</p>
+                            <h2 class="services-solution-main-text">Cost Control & Risk
+                                Management
+
+
+                            </h2>
+
+                        </div>
                     </div>
-                
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    </div>
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
                     <div class="services-slider-box">
-                    <img class="services-icon" src="images/3.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
+                        <img class="services-icon" src="images/Recovery-Analysis.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
 
-                        <h2 class="services-solution-main-text">Plaster Works</h2>
-                        <p class="aliquam-text"> We specialize in plastering walls and ceilings
-                            with precision, ensuring a smooth, durable,
-                            and flawless surface ready for painting or
-                            decoration.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/4.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
+                            <h2 class="services-solution-main-text">Recovery Analysis
+                                (Accounts Receivable)
 
-                        <h2 class="services-solution-main-text">Floor and Wall Tiling</h2>
-                        <p class="aliquam-text"> From ceramic to porcelain, we offer expert
-                            floor and wall tiling services that are perfectly
-                            aligned, durable, and visually appealing.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/5.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
+                            </h2>
 
-                        <h2 class="services-solution-main-text">Carpentry &
-                            Wood Flooring Works</h2>
-                        <p class="aliquam-text"> Our skilled carpenters provide customized
-                            woodwork, including cabinets, furniture, and
-                            elegant wood flooring installations that add
-                            warmth and sophistication.</p>
+                        </div>
                     </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/6.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
 
-                        <h2 class="services-solution-main-text">Door and Window
-                            Installation</h2>
-                        <p class="aliquam-text"> We install doors and windows with precision,
-                            ensuring proper alignment, functionality, and
-                            security while complementing the overall
-                            design.
-                        </p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/7.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Kitchen Installation</h2>
-                        <p class="aliquam-text"> We deliver complete kitchen installations,
-                            including cabinets, countertops, and
-                            fixtures, ensuring functionality, style, and
-                            efficient use of space.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/8.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Air Conditioning
-                            Systems Installation</h2>
-                        <p class="aliquam-text">Our team handles the installation, repair, and
-                            maintenance of air conditioning systems to keep
-                            interiors comfortable and energy-efficient.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/9.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Plumbing and
-                            Sanitary Installation</h2>
-                        <p class="aliquam-text"> We provide comprehensive plumbing and
-                            sanitary solutions, including piping, fixtures,
-                            and drainage systems, ensuring reliability
-                            and hygiene.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                  <div class="services-slider-box">
-                    <img class="services-icon" src="images/10.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Building Maintenance</h2>
-                        <p class="aliquam-text"> From routine inspections to repairs, our
-                            building maintenance services ensure
-                            structures remain safe, functional, and
-                            visually appealing over time.</p>
-                    </div>
-                </div>  
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/11.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Building Cleaning
-                            Services</h2>
-                        <p class="aliquam-text">We offer professional cleaning solutions for
-                            residential and commercial buildings,
-                            ensuring clean, organized, and welcoming
-                            spaces.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/12.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Post-Construction
-                            Cleaning</h2>
-                        <p class="aliquam-text"> Our post-construction cleaning services
-                            remove dust, debris, and leftover materials,
-                            leaving sites spotless and ready for
-                            immediate use.
-                        </p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/13.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Dust and Debris Removal</h2>
-                        <p class="aliquam-text">We handle thorough removal of construction
-                            dust and debris, ensuring safety, cleanliness,
-                            and a professional finish for every project.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/14.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Window and
-                            Glass Polishing</h2>
-                        <p class="aliquam-text"> Our experts clean and polish windows and
-                            glass surfaces to perfection, restoring shine,
-                            clarity, and a spotless finish.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/15.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Floor Scrubbing
-                            and Waxing</h2>
-                        <p class="aliquam-text"> We provide deep floor scrubbing and
-                            professional waxing to restore shine, remove
-                            stains, and protect surfaces. Our process
-                            enhances durability and leaves floors looking
-                            polished and refreshed.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/16.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Sanitization of Kitchens
-                            and Bathrooms</h2>
-                        <p class="aliquam-text">Our sanitization service targets high-touch
-                            and high-use areas in kitchens and
-                            bathrooms, eliminating germs, bacteria, and
-                            odors. We ensure a hygienic, safe, and
-                            spotless environment.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
-                    <div class="services-slider-box">
-                    <img class="services-icon" src="images/17.jpg" alt="our-servicesimg1">
-                    <div class="services-icon-box">
-
-                        <h2 class="services-solution-main-text">Final Handover
-                            Cleaning for Inspections</h2>
-                        <p class="aliquam-text"> We deliver detailed final handover cleaning
-                            designed to meet inspection standards.
-                            From floors to fixtures, we prepare the entire
-                            space for a smooth handover and perfect
-                            first impression.</p>
-                    </div>
-                </div>
                 </div>
                 
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Billing-Invoicing-& payment managmenr.jpg"
+                            alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Billing/Invoicing &
+                                Payments Management
+
+                            </h2>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Payroll-&-WPS-processing.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Payroll & WPS
+                                Processing
+
+                            </h2>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Accounts-Audit-&-management.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Accounts Audit &
+                                Report Arrangement
+
+                            </h2>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Supervision-of-accounting.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Supervision of
+                                Accounting
+
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Company-Accounts-set-up.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Company Accounts
+                                Setup
+
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Corporate-Tax.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Corporate Tax
+                                Registration & Filing
+
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/VAT-Registration.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">VAT Registration
+                                & Filing
+
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Financial-Reporting.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Financial Reporting
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 services-page-col">
+                    <div class="services-slider-box">
+                        <img class="services-icon" src="images/Accounting-&-Bookkeeping.jpg" alt="our-servicesimg1">
+                        <div class="services-icon-box">
+
+                            <h2 class="services-solution-main-text">Accounting & Bookkeeping
+                            </h2>
+
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
     <!-- ====================================== Section Seven ===================================== -->
-    
+
     <!-- ====================================== Footer ===================================== -->
-    <footer>
+    <footer id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
                     <a href="index.html"><img src="images/logo.svg" alt="footer-logo"></a>
-                    <p class="morbi">Sawaed Alamal for Technical Services L.L.C delivers reliable finishing,
-                        installation, and post-construction cleaning services across the UAE. </p>
+                    <p class="morbi">Magical Ledger Accounts LLC is a trusted accounting and financial services firm based in Dubai, UAE. We help companies—from startups to established businesses—manage their finances with accuracy, transparency, and compliance.</p>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
 
@@ -377,8 +317,8 @@
                         </div>
                         <div>
                             <p class="CallUs">Call Us</p>
-                            <a href="tel:+971529973761" class="CallUs-phone">
-                                <p>+971 52 997 3761</p>
+                            <a href="tel:+971503197008" class="CallUs-phone">
+                                <p>+971 50 3197008</p>
                             </a>
                         </div>
                     </div>
@@ -388,8 +328,8 @@
                         </div>
                         <div>
                             <p class="CallUs">Email Us</p>
-                            <a href="mailto:info@sawaedalamal.ae" class="CallUs-phone">
-                                <p>info@sawaedalamal.ae</p>
+                            <a href="mailto:info@magicalledger.ae" class="CallUs-phone">
+                                <p>info@magicalledger.ae</p>
                             </a>
                         </div>
                     </div>
@@ -399,7 +339,7 @@
                         </div>
                         <div>
                             <p class="CallUs">Find Us</p>
-                            <p class="CallUs-phone">Deria Dubai, UAE</p>
+                            <p class="CallUs-phone">Office # 625 / Corridor 5 /M-Floor Hamsah-A, Ansar Gallery Complex, Al Karama, Dubai, UAE.</p>
                         </div>
                     </div>
                 </div>
@@ -428,4 +368,6 @@
     <script src="js/parallax.js"></script>
     <script src="js/script.js"></script>
 
-</body></html>
+</body>
+
+</html>
