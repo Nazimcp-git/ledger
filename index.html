@@ -3,30 +3,31 @@
 
 <head>
     <!-- Primary Meta Tags -->
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Magical Ledger Accounts LLC | Finishing, Installation & Cleaning in Dubai</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Ledger Accounts LLC | Finishing, Installation & Cleaning in Dubai</title>
 
-<!-- Favicons -->
-<link rel="icon" type="image/x-icon" href="images/favicon.jpg">
-<link rel="apple-touch-icon" href="images/favicon.jpg">
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+    <link rel="apple-touch-icon" href="images/favicon.jpg">
 
-<!-- Stylesheets -->
-<link rel="stylesheet" href="css/swap.css">
-<link rel="stylesheet" href="css/magnific-popup.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/slick.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/media_query.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/swap.css">
+    <link rel="stylesheet" href="css/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media_query.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- ====================================== Preloader ===================================== -->
-    
+
     <!-- ====================================== Header ===================================== -->
     <header class="header">
         <div class="small-header">
@@ -38,7 +39,7 @@
                     <p><img src="images/location.svg" alt="location">Al Karama, Dubai, UAE.</p>
                 </div>
                 <div class="small-header-media-main">
-                    
+
                 </div>
             </div>
         </div>
@@ -65,21 +66,21 @@
                     <li class="conta-home"><a href="#contact" id="myLink">Contact Us</a></li>
                 </ul>
                 <div class="side-menu-footer">
-                    
+
                 </div>
             </nav>
             <script>
-    const links = document.querySelectorAll(".conta-home");
-    const nav = document.querySelector(".menu");
-    const overlau = document.querySelector(".menuOverlay");
+                const links = document.querySelectorAll(".conta-home");
+                const nav = document.querySelector(".menu");
+                const overlau = document.querySelector(".menuOverlay");
 
-    links.forEach(link => {
-        link.addEventListener("click", function() {
-            nav.classList.remove("active");
-            overlau.classList.remove("active");
-        });
-    });
-</script>
+                links.forEach(link => {
+                    link.addEventListener("click", function () {
+                        nav.classList.remove("active");
+                        overlau.classList.remove("active");
+                    });
+                });
+            </script>
 
             <div class="contact">
                 <div class="icon">
@@ -101,35 +102,65 @@
                     <img class="service-main" src="images/landing-page.jpg" alt="slider-imgsec1-img1">
 
                 </div>
+                <style>
+                    .service-main {
+                        content: url("images/landing-page.jpg");
+                    }
+
+                    @media (max-width: 1024px) {
+                        .service-main {
+                            content: url("images/phone.png");
+                        }
+                    }
+
+                    /* Mobile */
+                    @media (max-width: 600px) {
+                        .service-main {
+                            content: url("images/phone.png");
+                        }
+                    }
+                </style>
             </div>
             <div class="container">
                 <div class="row sec-one-row">
                     <div class="col-xxl-6 col-xl-6 col-lg-9 sec-one-col1 fade_down">
 
                         <h1 class="Handyman-main-text">YOUR
- COMPLETE
- ACCOUNTING
- PARTNER</h1>
-                        
+                            COMPLETE
+                            ACCOUNTING
+                            PARTNER</h1>
+
                         <div class="sec-one-buttons">
-                            
-                                <button class="btn-mainn btn3" style="margin-bottom: 10px;font-weight: 400; width: 100%; font-size: 20px;" href="#contact">Contact Us</button>
-                                <button class="btn-mainn btn3" style="font-weight: 400; width: 100%; font-size: 20px;">Download<p style=" margin-top: -5px; font-weight: 100; font-size: 12px;">Company Profile</p></button>
-                                <div class="dropdown-content">
-                                    <a href="/files/Sawaed alamal profile arabic.pdf" download="Sawaed alamal profile arabic.pdf">Arabic</a>
-                                    <a href="/files/Sawaed alamal profile.pdf" download="Sawaed alamal profile.pdf">English</a>
-                                    
-                            </div>
-                        
+
+                            <button class="btn-mainn btn3"
+                                style="margin-bottom: 10px;font-weight: 400; width: 100%; font-size: 20px;"
+                                onclick="location.href='#contact'">Contact Us</button>
+                            <button class="btn-mainn btn3" onclick="downloadPDF()"
+                                style="font-weight: 400; width: 100%; font-size: 20px;">Download<p
+                                    style=" margin-top: -5px; font-weight: 100; font-size: 12px;">Company Profile</p>
+                            </button>
+
+
                         </div>
                     </div>
                     <div class="col-xxl-6 col-xl-6 col-lg-12 sec-one-col1 fade_left">
                         <img class="sec-oneimg1" style="opacity: 0;" src="images/landing.png" alt="sec-oneimg1">
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+    <script>
+        function downloadPDF() {
+            const link = document.createElement('a');
+            link.href = 'files/MagicalLedger.pdf';
+            link.download = 'MagicalLedger.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
     <!-- ====================================== Section Two ===================================== -->
     <section class="section-two" id="about">
         <div class="container">
@@ -139,19 +170,20 @@
             <div class="row">
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
                     <h2 class="handyman-text fade_down"> THE MAGIC
- BEHIND YOUR
- ACCOUNTS AND
- FINANCIAL GROWTH</h2>
+                        BEHIND YOUR
+                        ACCOUNTS AND
+                        FINANCIAL GROWTH</h2>
 
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6">
-                    <p class="fusce fade_down">Magical Ledger Accounts LLC is a trusted accounting and financial services firm based in Dubai, 
-UAE. We help companies—from startups to established businesses—manage their finances with 
-accuracy, transparency, and compliance.
- With a team of experienced accountants and industry experts, we combine smart technology 
-with professional expertise to deliver reliable accounting, bookkeeping, auditing, taxation, and 
-f
- inancial management solutions.
+                    <p class="fusce fade_down">Magical Ledger Accounts LLC is a trusted accounting and financial
+                        services firm based in Dubai,
+                        UAE. We help companies—from startups to established businesses—manage their finances with
+                        accuracy, transparency, and compliance.
+                        With a team of experienced accountants and industry experts, we combine smart technology
+                        with professional expertise to deliver reliable accounting, bookkeeping, auditing, taxation, and
+                        f
+                        inancial management solutions.
                     </p>
                     <div class="row highQulity-box-row overflow-hidden">
 
@@ -159,60 +191,65 @@ f
                 </div>
             </div>
             <style>
-                .vandm{
+                .vandm {
                     display: flex;
                     gap: 15px;
                 }
-                .col1{
+
+                .col1 {
                     width: 50%;
                     background-color: #13143f;
                     color: white;
                     padding: 50px 50px;
                 }
-                .col2{
-                   width: 50%;
+
+                .col2 {
+                    width: 50%;
                     background-color: #13143f;
                     color: white;
                     padding: 50px 50px;
                 }
-                @media (max-width: 850px){
-                   .vandm{
-                    display: block;
-                    gap: 15px;
-                }
-                .col1{
-                    width: 100%;
-                    background-color: #13143f;
-                    color: white;
-                    padding: 35px 35px;
-                }
-                .col2{
-                   width: 100%;
-                   margin-top: 20px;
-                    background-color: #13143f;
-                    color: white;
-                    padding: 35px 35px;
-                } 
+
+                @media (max-width: 850px) {
+                    .vandm {
+                        display: block;
+                        gap: 15px;
+                    }
+
+                    .col1 {
+                        width: 100%;
+                        background-color: #13143f;
+                        color: white;
+                        padding: 35px 35px;
+                    }
+
+                    .col2 {
+                        width: 100%;
+                        margin-top: 20px;
+                        background-color: #13143f;
+                        color: white;
+                        padding: 35px 35px;
+                    }
                 }
             </style>
             <div class="vandm">
-            <div class="col1 fade_down">
-                <h2 style="font-weight: 700;">
-                    VISION
-                </h2>
-                <p>To be the most reliable and innovative accounting and financial 
-services partner in the UAE, delivering accuracy, integrity, and 
-value-driven results.</p>
-            </div>
-            <div class="col2 fade_down">
-                <h2 style="font-weight: 700;">
-                    MISSION
-                </h2>
-                <p> Our mission is to support businesses with accurate financial 
-insights, ensure compliance with UAE accounting and tax laws, 
-simplify financial operations through modern tools and technology, 
-and provide consistent value through professional expertise</p>
-            </div>
+                <div class="col1 fade_down">
+                    <h2 style="font-weight: 700;">
+                        VISION
+                    </h2>
+                    <p>To be the most reliable and innovative accounting and financial
+                        services partner in the UAE, delivering accuracy, integrity, and
+                        value-driven results.</p>
+                </div>
+                <div class="col2 fade_down">
+                    <h2 style="font-weight: 700;">
+                        MISSION
+                    </h2>
+                    <p> Our mission is to support businesses with accurate financial
+                        insights, ensure compliance with UAE accounting and tax laws,
+                        simplify financial operations through modern tools and technology,
+                        and provide consistent value through professional expertise</p>
+                </div>
             </div>
         </div>
     </section>
@@ -226,15 +263,16 @@ and provide consistent value through professional expertise</p>
                 <h2 class="handyman-text handyman-services fade_down">
                     WE HANDLE ALL YOUR ACCOUNTING NEEDS
                 </h2>
-                <p class="fusce malesuada fade_down mt-0">  At Magical Ledger Accounts LLC, we offer complete accounting and 
-f
- inancial management services to keep your business organized, 
-compliant, and financially strong. From bookkeeping, financial 
-reporting, VAT and corporate tax support to payroll, billing, audit 
-preparation, business valuation, and software setup — we provide 
-everything your company needs under one trusted partner. Our expert 
-team ensures accuracy, clarity, and smooth financial operations at every 
-step </p>
+                <p class="fusce malesuada fade_down mt-0"> At Magical Ledger Accounts LLC, we offer complete accounting
+                    and
+                    f
+                    inancial management services to keep your business organized,
+                    compliant, and financially strong. From bookkeeping, financial
+                    reporting, VAT and corporate tax support to payroll, billing, audit
+                    preparation, business valuation, and software setup — we provide
+                    everything your company needs under one trusted partner. Our expert
+                    team ensures accuracy, clarity, and smooth financial operations at every
+                    step </p>
             </div>
             <div class="services_slider">
                 <div class="services-slider-box">
@@ -242,8 +280,11 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Accounting & Bookkeeping
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We record and organize all your daily
+                            financial transactions with accuracy. Our
+                            service keeps your business compliant,
+                            clear, and fully updated. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -251,8 +292,11 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Financial Reporting
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text"> We prepare precise financial statements that
+                            reflect your true business performance. These
+                            reports help you make informed decisions with
+                            confidence</p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -260,10 +304,13 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">VAT Registration
- & Filing
+                            & Filing
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We handle the full VAT registration process for
+                            your business. Our team ensures timely and
+                            error-free VAT return filing as per UAE
+                            regulations. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -271,10 +318,11 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Corporate Tax
- Registration & Filing
+                            Registration & Filing
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We manage your corporate tax registration smoothly and efficiently.
+                            Accurate filing ensures compliance and avoids penalties. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -282,10 +330,13 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Company Accounts
- Setup
+                            Setup
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We develop a tailored chart of accounts
+                            based on your business model. This
+                            ensures smooth financial tracking from
+                            day one. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -293,10 +344,18 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Supervision of
- Accounting
+                            Accounting
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We oversee your accounting processes to
+                            ensure
+                            accuracy
+                            and
+                            consistency.
+                            Our
+                            supervision strengthens control and prevents
+                            f
+                            inancial errors. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -304,10 +363,12 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Accounts Audit &
- Report Arrangement
+                            Report Arrangement
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We prepare all documents required for annual
+                            audits. Our team coordinates with auditors to
+                            ensure a smooth and transparent process. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -315,21 +376,28 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Payroll & WPS
- Processing
+                            Processing
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We manage employee salaries with complete
+                            WPS compliance. Your staff gets paid accurately
+                            and on time, every time.
+                        </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
-                    <img class="services-icon" src="images/Billing-Invoicing-& payment managmenr.jpg" alt="our-servicesimg1">
+                    <img class="services-icon" src="images/Billing-Invoicing-& payment managmenr.jpg"
+                        alt="our-servicesimg1">
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Billing/Invoicing &
- Payments Management
+                            Payments Management
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We streamline your billing and payment
+                            cycles for better cash flow. Our system
+                            keeps every invoice and receipt tracked
+                            and organized </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -337,10 +405,12 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Recovery Analysis
- (Accounts Receivable)
+                            (Accounts Receivable)
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We analyze outstanding payments to improve
+                            collection efficiency. Our insights help you
+                            speed up recovery and strengthen cash flow. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -349,8 +419,10 @@ step </p>
 
                         <h2 class="services-solution-main-text">Business Valuation
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We calculate the true market value of your
+                            business using reliable methods. This supports
+                            investment, sale, or expansion decisions. </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -358,11 +430,14 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Cost Control & Risk
- Management
+                            Management
 
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We identify unnecessary costs and improve
+                            spending efficiency. Our strategies help reduce
+                            risks and protect profitability.
+                        </p>
                     </div>
                 </div>
                 <div class="services-slider-box">
@@ -370,13 +445,17 @@ step </p>
                     <div class="services-icon-box">
 
                         <h2 class="services-solution-main-text">Tally & Accounting
- Setup
+                            Setup
 
-</h2>
-                        
+                        </h2>
+                        <p class="aliquam-text">We install and configure accounting
+                            software tailored to your operations. This
+                            ensures smooth workflow and accurate
+                            f
+                            inancial management </p>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -390,23 +469,23 @@ step </p>
         </div>
     </div>
     <!-- ====================================== Section Four ===================================== -->
-    
+
     <script>
-function sendToWhatsApp() {
-    let message = document.getElementById("msgInput").value;
-    let name = document.getElementById("nameInput").value;
-    let phone = "971529973761"; // Add your phone number (with country code)
+        function sendToWhatsApp() {
+            let message = document.getElementById("msgInput").value;
+            let name = document.getElementById("nameInput").value;
+            let phone = "971529973761"; // Add your phone number (with country code)
 
-    // Encode the message for URL safety
-    let fullMessage = `Name: ${name}\nMessage: ${message}`;
-    let encoded = encodeURIComponent(fullMessage);
+            // Encode the message for URL safety
+            let fullMessage = `Name: ${name}\nMessage: ${message}`;
+            let encoded = encodeURIComponent(fullMessage);
 
-    let url = `https://wa.me/${phone}?text=${encoded}`;
+            let url = `https://wa.me/${phone}?text=${encoded}`;
 
-    // Redirect to WhatsApp
-    window.location.href = url;
-}
-</script>
+            // Redirect to WhatsApp
+            window.location.href = url;
+        }
+    </script>
     <!-- ====================================== Section Five ===================================== -->
 
 
@@ -416,7 +495,9 @@ function sendToWhatsApp() {
             <div class="row">
                 <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6">
                     <a href="index.html"><img src="images/logo.svg" alt="footer-logo"></a>
-                    <p class="morbi">Magical Ledger Accounts LLC is a trusted accounting and financial services firm based in Dubai, UAE. We help companies—from startups to established businesses—manage their finances with accuracy, transparency, and compliance.</p>
+                    <p class="morbi">Magical Ledger Accounts LLC is a trusted accounting and financial services firm
+                        based in Dubai, UAE. We help companies—from startups to established businesses—manage their
+                        finances with accuracy, transparency, and compliance.</p>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6">
 
@@ -466,7 +547,8 @@ function sendToWhatsApp() {
                         </div>
                         <div>
                             <p class="CallUs">Find Us</p>
-                            <p class="CallUs-phone">Office # 625 / Corridor 5 /M-Floor Hamsah-A, Ansar Gallery Complex, Al Karama, Dubai, UAE.</p>
+                            <p class="CallUs-phone">Office # 625 / Corridor 5 /M-Floor Hamsah-A, Ansar Gallery Complex,
+                                Al Karama, Dubai, UAE.</p>
                         </div>
                     </div>
                 </div>
@@ -474,120 +556,128 @@ function sendToWhatsApp() {
         </div>
     </footer>
     <div class="language-floater">
-    <div class="floater-content">
-        <p>هل ترغب في تغيير اللغة؟</p>
-        <p class="sub-text">Would you like to change the language?</p>
-        <div class="floater-btns">
-            <!-- Link to your English page -->
-            <a href="index.html" class="lang-btn">English</a>
-            <!-- Current Arabic page -->
-            <a href="ar/index.html" class="lang-btn">العربية</a>
+        <div class="floater-content">
+            <p>هل ترغب في تغيير اللغة؟</p>
+            <p class="sub-text">Would you like to change the language?</p>
+            <div class="floater-btns">
+                <!-- Link to your English page -->
+                <a href="index.html" class="lang-btn">English</a>
+                <!-- Current Arabic page -->
+                <a href="ar/index.html" class="lang-btn">العربية</a>
+            </div>
         </div>
+        <button class="floater-close" onclick="this.parentElement.style.display='none'">×</button>
     </div>
-    <button class="floater-close" onclick="this.parentElement.style.display='none'">×</button>
-</div>
-<style>
-    /*-----------------------[ Language Floating Widget ]------------------------*/
+    <style>
+        /*-----------------------[ Language Floating Widget ]------------------------*/
 
-.language-floater {
-    position: fixed;
-    bottom: 30px;
-    right: 30px; /* Positioned on the Right */
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.15);
-    z-index: 9999; /* Ensures it sits above everything */
-    display: none;
-    align-items: flex-start;
-    gap: 15px;
-    border: 1px solid #f0f0f0;
-    max-width: 320px;
-    animation: slideUp 0.8s ease-out;
-    font-family: 'Cairo', 'Tahoma', sans-serif !important; /* Ensure your font applies */
-}
+        .language-floater {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            /* Positioned on the Right */
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+            z-index: 9999;
+            /* Ensures it sits above everything */
+            display: none;
+            align-items: flex-start;
+            gap: 15px;
+            border: 1px solid #f0f0f0;
+            max-width: 320px;
+            animation: slideUp 0.8s ease-out;
+            font-family: 'Cairo', 'Tahoma', sans-serif !important;
+            /* Ensure your font applies */
+        }
 
-.floater-content p {
-    color: #13143f; /* Dark Blue from your theme */
-    font-size: 16px;
-    font-weight: 700;
-    margin-bottom: 5px;
-    text-align: right;
-    line-height: 1.4;
-}
+        .floater-content p {
+            color: #13143f;
+            /* Dark Blue from your theme */
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-align: right;
+            line-height: 1.4;
+        }
 
-.floater-content .sub-text {
-    color: #A8A9AD;
-    font-size: 13px;
-    font-weight: 400;
-    margin-bottom: 15px;
-    direction: ltr; /* English text should be LTR even in RTL mode */
-    text-align: right;
-}
+        .floater-content .sub-text {
+            color: #A8A9AD;
+            font-size: 13px;
+            font-weight: 400;
+            margin-bottom: 15px;
+            direction: ltr;
+            /* English text should be LTR even in RTL mode */
+            text-align: right;
+        }
 
-.floater-btns {
-    display: flex;
-    gap: 10px;
-    justify-content: flex-start; /* Buttons align to the right */
-}
+        .floater-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-start;
+            /* Buttons align to the right */
+        }
 
-.lang-btn {
-    padding: 8px 20px;
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
+        .lang-btn {
+            padding: 8px 20px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 600;
+            text-decoration: none;
+            border: 1px solid #eee;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
 
-.lang-btn:hover {
-    background: #f9f9f9;
-    transform: translateY(-2px);
-}
+        .lang-btn:hover {
+            background: #f9f9f9;
+            transform: translateY(-2px);
+        }
 
-.lang-btn.active {
-    background: #F16122; /* Theme Orange */
-    color: #fff;
-    border-color: #F16122;
-    pointer-events: none; /* Disable click on current language */
-}
+        .lang-btn.active {
+            background: #F16122;
+            /* Theme Orange */
+            color: #fff;
+            border-color: #F16122;
+            pointer-events: none;
+            /* Disable click on current language */
+        }
 
-/* Style for the English button to make it stand out */
-.lang-btn:not(.active) {
-    color: #13143f;
-    border-color: #13143f;
-}
+        /* Style for the English button to make it stand out */
+        .lang-btn:not(.active) {
+            color: #13143f;
+            border-color: #13143f;
+        }
 
-.floater-close {
-    background: none;
-    border: none;
-    font-size: 24px;
-    color: #999;
-    cursor: pointer;
-    line-height: 1;
-    padding: 0;
-    margin-top: -5px;
-    transition: color 0.3s;
-}
+        .floater-close {
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: #999;
+            cursor: pointer;
+            line-height: 1;
+            padding: 0;
+            margin-top: -5px;
+            transition: color 0.3s;
+        }
 
-.floater-close:hover {
-    color: #F16122;
-}
+        .floater-close:hover {
+            color: #F16122;
+        }
 
-@keyframes slideUp {
-    from { 
-        transform: translateY(50px); 
-        opacity: 0; 
-    }
-    to { 
-        transform: translateY(0); 
-        opacity: 1; 
-    }
-}
+        @keyframes slideUp {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
 
-</style>
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
     <!-- ====================================== Copyright ===================================== -->
     <div class="copyright-main" style="text-align: center;">
         <div class="container" style="text-align: center;">
