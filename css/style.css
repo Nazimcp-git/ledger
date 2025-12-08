@@ -2648,7 +2648,7 @@ input:checked+.slid-btn:before {
 }
 /*-----------------------[ 30.Services Page CSS ]------------------------*/
 #services-bg {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/header-img_7.jpg');
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/phone.png');
 }
 #services-page-section {
     padding-bottom: 100px;
@@ -2796,7 +2796,7 @@ input:checked+.slid-btn:before {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/roofing-services-img.jpg');
 }
 #carpentry-service-bg {
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/header-img_7.jpg');
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/phone.png');
 }
 #cleaning-service-bg {
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.90) 27.86%, rgba(0, 0, 0, 0.00) 100%), url('../images/cleaning-services-img.jpg');
